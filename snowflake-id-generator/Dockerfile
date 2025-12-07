@@ -19,4 +19,4 @@ USER appuser
 
 COPY --chown=appuser --from=builder /app/build/libs/*-SNAPSHOT.jar app.jar
 
-ENTRYPOINT ["java", "-jar", "apdockp.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
