@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: snow-demo
+spec:
+  containers:
+    - image: myapp:1.0
+      name: snow
+      ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
